@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#252528"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨The K-MART✨"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:fontFamily="times new roman"
+        android:textColor="#101010"
+        android:background="@drawable/shape"
+        />
+
+
+    <!--Below is a linear layout that aligns content horizontally-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#27f0c3"
+            android:layout_weight="1"
+            android:fontFamily="times new roman"
+            android:padding="10dp"
+            android:text="Register👤"
+            android:textColor="#010112"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cashier ➡️"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="times new roman"
+            android:layout_marginLeft="5dp"
+            android:textColor="#F9FBFB"
+            android:backgroundTint="#0D42BD"
+            android:id="@+id/signinBtn"
+            />
+
+    </LinearLayout>
+
+
+
+
+<!--    Below is our progress bar-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"/>
+
+<!--    Below is our recycler view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/single_item" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More About K-Mart📜"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:fontFamily="times new roman"
+        android:layout_marginLeft="5dp"
+        android:textColor="#F9FBFB"
+        android:backgroundTint="#0D42BD"
+        android:id="@+id/aboutBtn"
+        />
+</LinearLayout>
