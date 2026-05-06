@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/sokoicon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Sokogarden">
+        android:theme="@style/Theme.SpotMart">
         <activity
             android:name=".cart_item_layout"
             android:exported="false" />
@@ -23,7 +23,7 @@
             android:name=".check_out"
             android:exported="false" />
         <activity
-            android:name=".mycart"
+            android:name="."
             android:exported="false" />
         <activity
             android:name=".Splashscreen"

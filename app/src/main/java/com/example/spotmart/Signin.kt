@@ -1,4 +1,4 @@
-package com.example.sokogarden
+package com.example.spotmart
 
 import android.content.Intent
 import android.os.Bundle

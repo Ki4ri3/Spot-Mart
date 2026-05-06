@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" ✨ Signup ✨"
+        android:text=" ✨ Register ✨"
         android:textSize="38sp"
         android:fontFamily="times new roman"
         android:textAlignment="center"
@@ -111,6 +111,22 @@
                 android:textColor="#060606"
                 android:backgroundTint="#2de206"
                 android:id="@+id/signupBtn" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More About K-Mart?📜"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:fontFamily="times new roman"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="#F9FBFB"
+                android:backgroundTint="#0D42BD"
+                android:id="@+id/aboutBtn"
+                />
 
             <TextView
                 android:layout_width="match_parent"

@@ -11,7 +11,7 @@
         android:layout_height="425dp">
 
         <TextView
-            android:id="@+id/item_name"
+            android:id="@+id/pro_name_name"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -19,7 +19,7 @@
             android:text="Product Name" />
 
         <TextView
-            android:id="@+id/item_price"
+            android:id="@+id/product_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

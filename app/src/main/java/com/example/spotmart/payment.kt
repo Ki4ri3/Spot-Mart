@@ -1,4 +1,4 @@
-package com.example.sokogarden
+package com.example.spotmart
 
 import android.os.Bundle
 import android.widget.Button

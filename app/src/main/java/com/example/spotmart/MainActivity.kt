@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         val url = "https://keyarie.alwaysdata.net/api/get_products"
 
 //        import the helper class
-        val helper = ApiHelper(applicationContext)
+        val helper = ApiHelper(this)
 
 //        Inside of the helper class, access the function load products
         helper.loadProducts(url, recyclerView, progressBar)
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 //        Find the About button by use of its id and have the intent
         val aboutButton = findViewById<Button>(R.id.aboutBtn)
 
-//        Below is the intent to to the about activity
+//        Below is the intent to the About Activity
         aboutButton.setOnClickListener {
             val intent = Intent(applicationContext, About::class.java)
             startActivity(intent)
