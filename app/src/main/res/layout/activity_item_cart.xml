@@ -11,8 +11,10 @@
         android:id="@+id/product_name"
         android:text="Product Name"
         android:textAlignment="center"
+        android:textColor="#0B0B0B"
         android:fontFamily="times new roman"
-        android:textSize="16sp"
+        android:textSize="30sp"
+        android:layout_marginLeft="120dp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -30,6 +32,7 @@
         android:text="Price: KES0.00"
         android:textAlignment="center"
         android:textColor="#000007"
+        android:textStyle="bold"
         android:fontFamily="times new roman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

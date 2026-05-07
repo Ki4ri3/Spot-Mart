@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/product_cost"
-                android:text="KES 500"
+                android:text="KES 500.00"
                 android:fontFamily="times new roman"
                 android:layout_marginTop="5dp"
                 android:textAlignment="center"

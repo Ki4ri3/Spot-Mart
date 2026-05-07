@@ -59,6 +59,41 @@
             />
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Courier ➡️"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="times new roman"
+            android:layout_marginLeft="15dp"
+            android:textColor="#090909"
+            android:backgroundTint="#717574"
+            android:id="@+id/signinBtn"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Courier👤"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="times new roman"
+            android:layout_marginLeft="15dp"
+            android:textColor="#090909"
+            android:backgroundTint="#717574"
+            android:id="@+id/signinBtn"
+            />
+
+    </LinearLayout>
 
 <!--    Below is our progress bar-->
     <ProgressBar

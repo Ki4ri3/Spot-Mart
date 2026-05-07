@@ -48,27 +48,7 @@
                 android:textColor="#0B0A0A"
                 android:textSize="13dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/aboutTxt2"
-                android:text="Our Story: Rooted in Community
 
-                       The journey of K-Mart began with a simple observation: people were tired of navigating massive parking lots and endless aisles just to pick up a carton of milk or a fresh snack. We saw a need for a curated shopping experience—a place where the staff knows your name, the produce is always crisp, and you can get in and out without the stress of a 'big box' environment.What started as a small family vision has grown into a cornerstone of the neighborhood. We aren't just a business; we are your neighbors. We’ve seen kids grow up, celebrated local milestones, and been there through every rainy Tuesday and sunny Sunday. Our growth has been fueled entirely by the trust and loyalty of the people we serve, and for that, we are eternally grateful.
-
-            The K-Mart Difference:
-            What sets us apart from the average convenience store? It’s our commitment to quality over quantity. We don't believe in stocking thousands of items just to fill shelves. Instead, we hand-pick every product that enters our doors.Freshness First: We partner with local farmers and regional suppliers to ensure that our fruits, vegetables, and dairy products are as fresh as they can be. From morning coffee to evening ingredients, quality is never compromised.
-
-            Curated Convenience: We understand your busy lifestyle. Our layout is designed for speed and ease, ensuring that you find exactly what you need—from household staples and pantry essentials to gourmet treats and cold beverages—within minutes.
-
-            Support Local: We are firm believers in 'Local Supporting Local.' That’s why you’ll find a dedicated section of our store featuring artisanal goods, snacks, and crafts produced by creators right here in our region.
-
-            A Friendly Face: Technology is great, but it can’t replace a genuine smile. Our team members are trained to be more than just cashiers; they are ambassadors of hospitality. Whether you need help finding an ingredient or just want to chat about the weather, we’re here for you.
-"
-                android:textColor="#0B0A0A"
-                android:textSize="13dp"
-                android:fontFamily="times new roman"
-                />
 
             Our Core Values
             Our business is built on a foundation of four key pillars that guide every decision we make:

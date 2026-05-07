@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpotMart">
         <activity
+            android:name=".couriersignin"
+            android:exported="false" />
+        <activity
             android:name=".cart_item_layout"
             android:exported="false" />
         <activity
@@ -23,7 +26,7 @@
             android:name=".check_out"
             android:exported="false" />
         <activity
-            android:name="."
+            android:name=".mycart"
             android:exported="false" />
         <activity
             android:name=".Splashscreen"
