@@ -8,11 +8,17 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/sokoicon"
+        android:icon="@drawable/welcoming"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/sokoicon"
+        android:roundIcon="@drawable/welcoming"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpotMart">
+        <activity
+            android:name=".couriersignup"
+            android:exported="false" />
+        <activity
+            android:name=".cashierpage"
+            android:exported="false" />
         <activity
             android:name=".couriersignin"
             android:exported="false" />
@@ -24,9 +30,6 @@
             android:exported="false" />
         <activity
             android:name=".check_out"
-            android:exported="false" />
-        <activity
-            android:name=".mycart"
             android:exported="false" />
         <activity
             android:name=".Splashscreen"

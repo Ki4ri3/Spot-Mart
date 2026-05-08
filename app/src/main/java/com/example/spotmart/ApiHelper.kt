@@ -22,14 +22,15 @@ class ApiHelper(private val context: Context) {
 
     // POST request
     fun post(api: String, params: RequestParams) {
-        Toast.makeText(this@ApiHelper, "Please wait for response", Toast.LENGTH_LONG).show()
+        Toast.
+        makeText(context, "Please wait for response", Toast.LENGTH_LONG).show()
         client.post(api, params, object : JsonHttpResponseHandler() {
             override fun onSuccess(
                 statusCode: Int,
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
-                Toast.makeText(this@ApiHelper, "Response: $response", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Response: $response", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(
@@ -38,14 +39,14 @@ class ApiHelper(private val context: Context) {
                 responseString: String?,
                 throwable: Throwable?
             ) {
-                Toast.makeText(this@ApiHelper, "Error: $responseString", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "Error: $responseString", Toast.LENGTH_LONG).show()
             }
         })
     }
 
     // Login POST
     fun post_login(api: String, params: RequestParams) {
-        Toast.makeText(this@ApiHelper, "Please wait for response", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, "Please wait for response", Toast.LENGTH_LONG).show()
         client.post(api, params, object : JsonHttpResponseHandler() {
             override fun onSuccess(
                 statusCode: Int,
@@ -65,14 +66,14 @@ class ApiHelper(private val context: Context) {
                     editor.putString("email", email)
                     editor.apply()
 
-                    Toast.makeText(this@ApiHelper, "Welcome $username", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Welcome $username", Toast.LENGTH_LONG).show()
 
                     // Redirect to Dashboard
                     val intent = Intent(context, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     context.startActivity(intent)
                 } else {
-                    Toast.makeText(this@ApiHelper, "$message", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "$message", Toast.LENGTH_LONG).show()
                 }
             }
 
@@ -82,7 +83,7 @@ class ApiHelper(private val context: Context) {
                 responseString: String?,
                 throwable: Throwable?
             ) {
-                Toast.makeText(this@ApiHelper, "Error: $responseString", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "Error: $responseString", Toast.LENGTH_LONG).show()
             }
         })
     }
@@ -111,7 +112,7 @@ class ApiHelper(private val context: Context) {
                 throwable: Throwable?
             ) {
                 progressBar?.visibility = View.GONE
-                Toast.makeText(this@ApiHelper, "Failed to load products", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Failed to load products", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -148,7 +149,7 @@ class ApiHelper(private val context: Context) {
 
     // PUT request
     fun put(api: String, jsonData: JSONObject) {
-        Toast.makeText(this@ApiHelper, "Please Wait for response", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, "Please Wait for response", Toast.LENGTH_LONG).show()
         val con_body = StringEntity(jsonData.toString())
         client.put(context, api, con_body, "application/json", object : JsonHttpResponseHandler() {
             override fun onSuccess(
@@ -156,7 +157,7 @@ class ApiHelper(private val context: Context) {
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
-                Toast.makeText(this@ApiHelper, "Response $response", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Response $response", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(
@@ -166,7 +167,7 @@ class ApiHelper(private val context: Context) {
                 errorResponse: JSONObject?
             ) {
                 Toast.makeText(
-                    this@ApiHelper,
+                    context,
                     "Error Occurred: " + throwable.toString(),
                     Toast.LENGTH_LONG
                 ).show()
@@ -176,7 +177,7 @@ class ApiHelper(private val context: Context) {
 
     // DELETE request
     fun delete(api: String, jsonData: JSONObject) {
-        Toast.makeText(this@ApiHelper, "Please Wait for response", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, "Please Wait for response", Toast.LENGTH_LONG).show()
         val con_body = StringEntity(jsonData.toString())
         client.delete(context, api, con_body, "application/json", object : JsonHttpResponseHandler() {
             override fun onSuccess(
@@ -184,7 +185,7 @@ class ApiHelper(private val context: Context) {
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
-                Toast.makeText(this@ApiHelper, "Response $response", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Response $response", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(
@@ -194,7 +195,7 @@ class ApiHelper(private val context: Context) {
                 errorResponse: JSONObject?
             ) {
                 Toast.makeText(
-                    this@ApiHelper,
+                    context,
                     "Error Occurred: " + throwable.toString(),
                     Toast.LENGTH_LONG
                 ).show()

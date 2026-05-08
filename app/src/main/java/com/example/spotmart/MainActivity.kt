@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 //        find the recyclerview and the progress bar by use of their ids
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val progressBar = findViewById<ProgressBar>(R.id.progressbar)
+        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
 
 //        specify the API URL endpoint for fetching the products from always data
         val url = "https://keyarie.alwaysdata.net/api/get_products"

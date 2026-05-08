@@ -21,8 +21,8 @@ class Signin : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//        Find the two edittexts, a button and a textview by use of their ids
-        val email = findViewById<EditText>(R.id.email)
+//        Find the two edit texts, a button and a textview by use of their ids
+        val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
         val signinButton = findViewById<Button>(R.id.signinBtn)
         val signupTextView = findViewById<TextView>(R.id.signuptxt)
@@ -33,16 +33,22 @@ class Signin : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //        On the textview set on click listener such that when clicked it navigates you to the signup page
+        signinButton.setOnClickListener {
+            val intent = Intent(applicationContext, cashierpage::class.java)
+            startActivity(intent)
+        }
+
 //        On click of the button signin, we need to interact with the API endpoints as we pass the two data info email and password
         signinButton.setOnClickListener {
 //            Specify the API endpoint
-            val api = "https://keyarie.alwaysdata.net/api/signin"
+            val api = "https://keyarie.alwaysdata.net/api/signincourier"
 
 //            Create a RequestParams tht will enable you hold the data in form of a bundle/package
             val data = RequestParams()
 
 //            Add/append/attach the email and the password
-            data.put("email", email.text.toString())
+            data.put("username", username.text.toString())
             data.put("password",password.text.toString())
 
 //            Import the API helper

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cashierpage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ✨ Add Product ✨"
+        android:textSize="38sp"
+        android:fontFamily="times new roman"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:background="@drawable/shape"
+        android:padding="12dp"
+        android:textColor="#0b0b0b" />
+
+    <!--    Below is a cardview -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#a79b90"
+            android:padding="12dp">
+
+            <!--            Below is the editText for username -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Product Name"
+                android:textColorHint="#000"
+                android:textSize="22sp"
+                android:fontFamily="times new roman"
+                android:textColor="#000"
+                android:id="@+id/product_name"
+                android:layout_margin="8dp"
+                android:background="#F8F6F6"
+                android:padding="10dp" />
+
+            <!--            Below is the editText for email -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Product Description"
+                android:textColorHint="#000"
+                android:textSize="22sp"
+                android:fontFamily="times new roman"
+                android:textColor="#000"
+                android:id="@+id/product_description"
+                android:inputType="textEmailAddress"
+                android:layout_margin="8dp"
+                android:background="#F8F6F6"
+                android:padding="10dp" />
+
+            <!--            Below is the editText for password -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Product Cost"
+                android:textColorHint="#000"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:fontFamily="times new roman"
+                android:id="@+id/product_cost"
+                android:inputType="textPassword"
+                android:layout_margin="8dp"
+                android:background="#F8F6F6"
+                android:padding="10dp" />
+
+            <!--            Below is the editText for Phone number -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Choose Product Photo"
+                android:textColorHint="#000"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:fontFamily="times new roman"
+                android:id="@+id/product_photo"
+                android:layout_margin="8dp"
+                android:background="#F8F6F6"
+                android:padding="10dp" />
+
+            <!--            Below is the signup Button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Product ✅"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="times new roman"
+                android:layout_marginTop="25dp"
+                android:textColor="#060606"
+                android:backgroundTint="#166be2"
+                android:id="@+id/addproductBtn"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!--            Below is the signup Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔙 Log Out"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="times new roman"
+        android:layout_marginTop="25dp"
+        android:textColor="#060606"
+        android:backgroundTint="#e21209"
+        android:id="@+id/logoutBtn"/>
+
+</LinearLayout>

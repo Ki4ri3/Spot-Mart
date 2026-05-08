@@ -19,8 +19,8 @@ class CartAdapter(
 ) : RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
 
     inner class CartViewHolder(val view: android.view.View) : RecyclerView.ViewHolder(view) {
-        val nameText: TextView = view.findViewById(R.id.item_name)
-        val priceText: TextView = view.findViewById(R.id.item_price)
+        val nameText: TextView = view.findViewById(R.id.product_name)
+        val priceText: TextView = view.findViewById(R.id.product_cost)
         val quantityText: TextView = view.findViewById(R.id.quantity_text)
         val removeButton: Button = view.findViewById(R.id.remove_btn)
         val increaseButton: Button = view.findViewById(R.id.increase_btn)

@@ -11,8 +11,6 @@ import androidx.core.view.WindowInsetsCompat
 class Splashscreen : AppCompatActivity() {
 
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,12 +20,12 @@ class Splashscreen : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //        This activity is going to appear for about 5 seconds and then we shall be taken to the main activity.
+        //        This activity is going to appear for about 5 seconds then we shall be taken to the main activity.
         Handler().postDelayed(
             {
                 val intent = Intent(applicationContext, MainActivity::class.java)
                 startActivity(intent)
-            }, 5000
+            }, 4000
         )
 
     }
