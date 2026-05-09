@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 //        Find the buttons by use of their ids
         val SigninButton = findViewById<Button>(R.id.signinBtn)
         val SignupButton = findViewById<Button>(R.id.signupBtn)
+        val CouriersigninButton = findViewById<Button>(R.id.couriersigninBtn)
+        val CouriersignupButton = findViewById<Button>(R.id.couriersignupBtn)
 
 //        Create the intents to the two activities
         SignupButton.setOnClickListener {
@@ -37,6 +39,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, Signin::class.java)
             startActivity(intent)
         }
+
+//        ====================================================
+        CouriersigninButton.setOnClickListener {
+            val intent = Intent(applicationContext, couriersignin::class.java)
+            startActivity(intent)
+        }
+        //        ====================================================
+        CouriersignupButton.setOnClickListener {
+            val intent = Intent(applicationContext, couriersignup::class.java)
+            startActivity(intent)
+        }
+
 
 //        find the recyclerview and the progress bar by use of their ids
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)

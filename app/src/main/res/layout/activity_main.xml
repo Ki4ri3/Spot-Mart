@@ -75,7 +75,7 @@
             android:layout_marginLeft="15dp"
             android:textColor="#090909"
             android:backgroundTint="#717574"
-            android:id="@+id/signinBtn"
+            android:id="@+id/couriersigninBtn"
             />
 
         <Button
@@ -90,7 +90,7 @@
             android:layout_marginLeft="15dp"
             android:textColor="#090909"
             android:backgroundTint="#717574"
-            android:id="@+id/signinBtn"
+            android:id="@+id/couriersignupBtn"
             />
 
     </LinearLayout>

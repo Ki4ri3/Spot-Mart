@@ -28,11 +28,17 @@ class Signup : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.password)
         val phone = findViewById<EditText>(R.id.phone)
         val signupButton = findViewById<Button>(R.id.signupBtn)
-        val signinTextView = findViewById<TextView>(R.id.signintxt)
+        val SigninTextView = findViewById<TextView>(R.id.signintxt)
+        val AboutButton = findViewById<Button>(R.id.aboutBtn)
 
 //        Below,when a person clicks on the textview,is taken to the signin page
-        signinTextView.setOnClickListener {
+        SigninTextView.setOnClickListener {
             val intent = Intent(applicationContext, Signin::class.java)
+            startActivity(intent)
+        }
+
+        AboutButton.setOnClickListener {
+            val intent = Intent(applicationContext, About::class.java)
             startActivity(intent)
         }
 

@@ -14,7 +14,7 @@
         app:cardElevation="15dp"
         app:cardCornerRadius="16dp">
 
-<!--        below is another linearlayout that dictates how the contents will be be aligned-->
+<!--        below is another linearlayout that dictates how the contents will be aligned-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

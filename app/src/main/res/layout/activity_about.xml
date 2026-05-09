@@ -44,31 +44,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="times new roman"
                 android:text="Welcome to K-Mart – 'Your Neighborhood’s Heartbeat'.
-                In a world that seems to move faster every single day, we believe that shopping for your daily essentials shouldn't feel like a marathon. At [Mini Mart Name], we have redefined the convenience store experience by blending the efficiency of a modern retailer with the warm, personalized touch of a traditional corner shop. Founded on the principle that 'small is beautiful', we are proud to be the go-to destination for our community, providing high-quality products, fresh selections, and friendly service right where you live and work."
+                                                              In a world that seems to move faster every single day, we believe that shopping for your daily essentials shouldn't feel like a marathon. At [Mini Mart Name], we have redefined the convenience store experience by blending the efficiency of a modern retailer with the warm, personalized touch of a traditional corner shop. Founded on the principle that 'small is beautiful', we are proud to be the go-to destination for our community, providing high-quality products, fresh selections, and friendly service right where you live and work."
                 android:textColor="#0B0A0A"
-                android:textSize="13dp" />
-
-
-
-            Our Core Values
-            Our business is built on a foundation of four key pillars that guide every decision we make:
-
-            Integrity: We provide fair pricing and honest products. You can trust that what you buy at [Mini Mart Name] is safe, reliable, and worth every penny.
-
-            Sustainability: We are constantly looking for ways to reduce our footprint. From minimizing plastic waste to optimizing our energy use, we strive to keep our neighborhood clean and green for future generations.
-
-            Inclusivity: Everyone is welcome at our mart. We strive to stock a diverse range of products that cater to various dietary needs, cultural preferences, and lifestyles.
-
-            Agility: We listen to our customers. If there is a product you want to see on our shelves, tell us! We pride ourselves on being able to adapt quickly to the needs of our community.
-
-            Looking Toward the Future
-            As we look ahead, our mission remains unchanged: to be the most reliable, friendly, and convenient part of your day. We are constantly innovating—whether it’s through expanding our organic selections, introducing "grab-and-go" healthy meal kits, or enhancing our loyalty programs to give back to those who support us.
-
-            At the end of the day, [Mini Mart Name] isn't just about the goods on the shelves. It’s about the people who walk through our doors. We invite you to stop by, say hello, and experience a better way to shop.
-
-            Thank you for making us a part of your home.
-
-            ~ K-Mart
+                android:textSize="16dp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -82,9 +60,109 @@
                 android:layout_marginLeft="35dp"
                 android:fontFamily="times new roman"
                 />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="#094683">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact us Today"
+                        android:textSize="25dp"
+                        android:fontFamily="times new roman"
+                        android:textStyle="bold"
+                        android:textColor="#FBFBFB"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Call 📞  us now @ +2547xxxxxxx or +2547xxxxxxx"
+                        android:textSize="15dp"
+                        android:fontFamily="times new roman"
+                        android:textStyle="bold"
+                        android:textColor="#FBFBFB"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email 📧  us now spotmartofficial@gmail.com"
+                        android:textSize="15dp"
+                        android:fontFamily="times new roman"
+                        android:textStyle="bold"
+                        android:textColor="#FBFBFB"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our Social Media Platforms"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#050505"
+                        android:textAlignment="center"
+                        android:fontFamily="times new roman"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/tiktok"
+                            android:src="@drawable/tiktok"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="6dp"/>
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/instagram"
+                            android:src="@drawable/instagram"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="6dp"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/facebook"
+                            android:src="@drawable/facebook"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="6dp"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/x"
+                            android:src="@drawable/x"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="6dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 

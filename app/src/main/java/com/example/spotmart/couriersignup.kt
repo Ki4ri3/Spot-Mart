@@ -29,10 +29,17 @@ class couriersignup : AppCompatActivity() {
         val courier_phone = findViewById<EditText>(R.id.courier_phone)
         val signupButton = findViewById<Button>(R.id.signupBtn)
         val signinTextView = findViewById<TextView>(R.id.signintxt)
+        val AboutButton = findViewById<Button>(R.id.aboutBtn)
+
 
 //        Below,when a person clicks on the textview,is taken to the signin page
         signinTextView.setOnClickListener {
             val intent = Intent(applicationContext, couriersignin::class.java)
+            startActivity(intent)
+        }
+
+        AboutButton.setOnClickListener {
+            val intent = Intent(applicationContext, About::class.java)
             startActivity(intent)
         }
 
