@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
 //        find the recyclerview and the progress bar by use of their ids
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)

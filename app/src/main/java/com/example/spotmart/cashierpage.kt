@@ -28,10 +28,16 @@ class cashierpage : AppCompatActivity() {
         val productcost = findViewById<EditText>(R.id.product_cost)
         val productphoto = findViewById<EditText>(R.id.product_photo)
         val addproductButton = findViewById<Button>(R.id.addproductBtn)
+        val logoutButton = findViewById<Button>(R.id.logoutBtn)
 
 //        On click of the signup button we want to register a person
         addproductButton.setOnClickListener {
             val api = "https://keyarie.alwaysdata.net/api/add_product"
+
+            logoutButton.setOnClickListener {
+                val intent = Intent(applicationContext, MainActivity::class.java)
+                startActivity(intent)
+            }
 
 //            Create a requestParams => it is where we are going to hold/sore all the data
             val data = RequestParams()
